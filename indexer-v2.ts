@@ -72,6 +72,7 @@ async function handleBatch(
         !event.data ||
         !transaction?.meta?.hash ||
         !event.fromAddress
+        String(event_obj.keys)
       ) {
         continue;
       }
